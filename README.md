@@ -19,9 +19,9 @@ It is open source and completely free. The application also has a built in Demo 
 
 ## Install
 
-[Download DC-ELM327 v3.0.2 Release APK](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.2/DC-ELM327-v3.0.2-release-unsigned.apk) · [SHA-256 checksum](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.2/DC-ELM327-v3.0.2-release-unsigned.apk.sha256)
+[Download DC-ELM327 v3.0.3 Release APK](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk) · [SHA-256 checksum](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk.sha256)
 
-> This build is an unsigned Release APK. Sign it with the project's production key before distributing it as an official installable update.
+> This build is signed with the new DC-ELM327 production key. Keep that key safe; future updates must use the same key to install over this version.
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fr3ts0n/AndrOBD?label=latest%20version&sort=semver)](https://github.com/fr3ts0n/AndrOBD/releases)
 [![F-Droid](https://img.shields.io/f-droid/v/com.fr3ts0n.ecu.gui.androbd)](https://f-droid.org/en/packages/com.fr3ts0n.ecu.gui.androbd/)
