@@ -23,5 +23,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: DC-ESCANER-APK
+          name: DC-ESCANER-APK-FINAL
           path: androbd/build/outputs/apk/release/androbd-release.apk
+          retention-days: 90
