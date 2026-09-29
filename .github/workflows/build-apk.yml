@@ -1,0 +1,36 @@
+name: Build DC-ESCANER APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compilar APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Dar permisos
+        run: chmod +x gradlew
+
+      - name: Compilar VERSIÓN RELEASE
+        run: ./gradlew assembleRelease --no-daemon
+
+      - name: Subir APK lista
+        uses: actions/upload-artifact@v4
+        with:
+          name: DC-ESCANER-RELEASE
+          path: androbd/build/outputs/apk/release/androbd-release.apk
+          retention-days: 30
