@@ -1,33 +1,30 @@
-![AndrOBD](fastlane/metadata/android/en-US/images/tvBanner.png)
+<p align="center">
+  <img src="logo/dc-elm327.png" alt="HC-ELM327" width="242">
+</p>
 
-AndrOBD allows your Android device to connect to your car's on-board diagnostics system via any ELM327 compatible OBD adapter, display various information & perform operations.
-It is open source and completely free. The application also has a built in Demo mode that simulates live data, so you don't require an adapter to test it.
+# DC-ELM327
 
-![Android CI](https://github.com/fr3ts0n/AndrOBD/actions/workflows/android.yml/badge.svg)
-[![GitHub issues](https://img.shields.io/github/issues/fr3ts0n/AndrOBD?color=red)](https://github.com/fr3ts0n/AndrOBD/issues)
-[![Liberapay receiving](https://img.shields.io/liberapay/receives/AndrOBD?label=Liberapay)](https://liberapay.com/AndrOBD/donate/)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/AndrOBD?color=orange)](https://www.reddit.com/r/AndrOBD/)
-[![Telegram](https://img.shields.io/badge/chat-on%20Telegram-blue)](https://t.me/joinchat/G60ltQv5CCEQ94BZ5yWQbg)
-[![Matrix](https://img.shields.io/badge/Chat-on%20Matrix-blue)](https://matrix.to/#/#AndrOBD:matrix.org)
-[![GitHub license](https://img.shields.io/github/license/fr3ts0n/AndrOBD?color=lightgrey)](https://github.com/fr3ts0n/AndrOBD/blob/master/LICENSE)
+Aplicación Android para diagnóstico vehicular mediante adaptadores ELM327. Permite conectarse por **Bluetooth, USB o Wi‑Fi**, leer y borrar códigos de falla, consultar datos en vivo, visualizar gráficas y revisar información del vehículo desde el teléfono.
 
-## Documentation
+![Build Release APK](https://github.com/dcg0/dc-elm-327/actions/workflows/build-apk.yml/badge.svg)
+[![Última versión](https://img.shields.io/github/v/release/dcg0/dc-elm-327?sort=semver&label=release)](https://github.com/dcg0/dc-elm-327/releases)
+[![Issues](https://img.shields.io/github/issues/dcg0/dc-elm-327?color=red)](https://github.com/dcg0/dc-elm-327/issues)
+[![Licencia](https://img.shields.io/github/license/dcg0/dc-elm-327?color=lightgrey)](https://github.com/dcg0/dc-elm-327/blob/main/LICENSE)
+[![Descargas](https://img.shields.io/github/downloads/dcg0/dc-elm-327/total?color=blue)](https://github.com/dcg0/dc-elm-327/releases)
+[![Telegram](https://img.shields.io/badge/chat-Telegram-blue)](https://t.me/AndrOBD_dev)
+[![Matrix](https://img.shields.io/badge/chat-Matrix-000000)](https://matrix.to/#/#AndrOBD:matrix.org)
+
+## Descarga
+
+[**Descargar DC-ELM327 v3.0.3 — APK firmado**](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk) · [Verificar SHA-256](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk.sha256)
+
+La aplicación requiere un adaptador ELM327 compatible. Después de descargar el APK, habilita la instalación desde esta fuente en Android si el sistema lo solicita.
+
+## Documentación
 
 * [FAQ](https://github.com/fr3ts0n/AndrOBD/wiki/Frequently-asked-questions) - Frequently asked questions
 
 * [Wiki](https://github.com/fr3ts0n/AndrOBD/wiki) - AndrOBD knowledge database
-
-## Install
-
-[Download DC-ELM327 v3.0.3 Release APK](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk) · [SHA-256 checksum](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk.sha256)
-
-> This build is signed with the new DC-ELM327 production key. Keep that key safe; future updates must use the same key to install over this version.
-
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fr3ts0n/AndrOBD?label=latest%20version&sort=semver)](https://github.com/fr3ts0n/AndrOBD/releases)
-[![F-Droid](https://img.shields.io/f-droid/v/com.fr3ts0n.ecu.gui.androbd)](https://f-droid.org/en/packages/com.fr3ts0n.ecu.gui.androbd/)
-[![Telegram](https://img.shields.io/badge/alpha/beta-on%20Telegram-blue)](https://t.me/AndrOBD_dev)
-
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.androbd/)
 
 ##  Features
 
@@ -208,3 +205,12 @@ Buy us a coffee or donate in the amount that you see valuable for the project, a
 </details>
 
 *Thanks to the open source community and any supporters who pick this project up, AndrOBD will be able to get more development, new features, and hopefully even more than that.*
+
+
+---
+
+## Autoría y descarga
+
+**Autor:** [DC Laboratory](https://dcg0.github.io/DC-laboratory/)
+
+[Descargar DC-ELM327 v3.0.3 — APK firmado](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk)
