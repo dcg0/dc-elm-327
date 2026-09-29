@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--  AndrOBD -->
-    <string name="app_name" translatable="false">AndrOBD</string>
+    <!--  DC-ESCANER -->
+    <string name="app_name" translatable="false">DC-ESCANER</string>
     <string name="copyright_fr3ts0n" translatable="false">© 2015-2026 fr3ts0n</string>
     <string name="translation_credits">Translation by fr3ts0n</string>
     <string name="app_description">Android OBD vehicle diagnostics app for ELM327 Bluetooth adapter</string>
@@ -275,9 +275,9 @@ period of time while the ECU recalibrates itself.
         Connect to your car\'s OBD system\n
         * GNU General Public License v3.0
     </string>
-    <string name="url_app_license" translatable="false">https://github.com/fr3ts0n/AndrOBD/blob/master/LICENSE</string>
-    <string name="url_app_mainpage" translatable="false">https://github.com/fr3ts0n/AndrOBD/</string>
-    <string name="url_app_releases" translatable="false">https://github.com/fr3ts0n/AndrOBD/releases/</string>
+    <string name="url_app_license" translatable="false">https://github.com/fr3ts0n/DC-ESCANER/blob/master/LICENSE</string>
+    <string name="url_app_mainpage" translatable="false">https://github.com/fr3ts0n/DC-ESCANER/</string>
+    <string name="url_app_releases" translatable="false">https://github.com/fr3ts0n/DC-ESCANER/releases/</string>
     <string name="url_app_translation" translatable="false">https://hosted.weblate.org/projects/androbd/strings/</string>
     <string name="lib_usb_serial" translatable="false">usb-serial-for-android</string>
     <string name="lib_usb_serial_sum" translatable="false">
