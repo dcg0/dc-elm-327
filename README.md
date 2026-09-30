@@ -16,14 +16,14 @@ Aplicación Android para diagnóstico vehicular mediante adaptadores ELM327. Per
 
 ## Descarga
 
-[**Descargar DC-ELM327 v3.0.3 — APK firmado**](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk) · [Verificar SHA-256](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.3/DC-ELM327-v3.0.3-release.apk.sha256)
+[**Descargar DC-ELM327 v3.0.4 — APK firmado**](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.4/DC-ELM327-v3.0.4-release.apk) · [Verificar SHA-256](https://github.com/dcg0/dc-elm-327/releases/download/v3.0.4/DC-ELM327-v3.0.4-release.apk.sha256)
 
 La aplicación requiere un adaptador ELM327 compatible. Después de descargar el APK, habilita la instalación desde esta fuente en Android si el sistema lo solicita.
 
 ### Verificación de seguridad
 
-- **SHA-256 de la APK publicada:** `68624c71ff0ba927331cb7d06ab6d5fdf50fd0259f8319a4608222e5e31bb162`
-- La APK fue compilada como **Release**, firmada con la clave de producción y verificada con Android Signature Scheme v1, v2 y v3.
+- **SHA-256 de la APK publicada:** `336d7a9adadfd3bc05c1d8a654e7a6c3fb1980a8cd360ea23bfd19e29bbfdb11`
+- La APK fue compilada como **Release**, sin minificación R8 para mejorar la compatibilidad de arranque, firmada con la clave de producción y verificada con Android Signature Scheme v1, v2 y v3.
 - La APK publicada y la compilada localmente tienen el mismo SHA-256.
 - La aplicación requiere Android 6.0 (API 23) o posterior y apunta al SDK objetivo configurado para esta release.
 

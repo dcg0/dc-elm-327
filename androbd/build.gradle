@@ -12,8 +12,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdkVersion 37
-        versionCode 30003
-        versionName 'V3.0.3'
+        versionCode 30004
+        versionName 'V3.0.4'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -37,8 +37,10 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            // Keep the public release unminified for maximum startup compatibility.
+            // This avoids runtime failures from legacy reflection/resource lookups.
+            minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
