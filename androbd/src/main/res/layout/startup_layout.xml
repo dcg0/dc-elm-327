@@ -1,84 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.18"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vehicle_background" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#20FFFFFF"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#20FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="240dp"
+                android:maxHeight="240dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:maxWidth="240dp"
-            android:maxHeight="240dp"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/logo" />
+            android:gravity="bottom"
+            android:background="#40000000">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/url_app_mainpage"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="browseClickedUrl"
+                android:text="@string/app_name"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/url_app_releases"
+                android:enabled="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="browseClickedUrl"
+                android:text="@string/app_version"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/copyright_fr3ts0n"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/url_app_translation"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="browseClickedUrl"
+                android:text="@string/translation_credits"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
     </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:background="#40000000">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:contentDescription="@string/url_app_mainpage"
-            android:focusable="true"
-            android:gravity="center"
-            android:onClick="browseClickedUrl"
-            android:text="@string/app_name"
-            android:textAppearance="@android:style/TextAppearance.Medium"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:contentDescription="@string/url_app_releases"
-            android:enabled="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:onClick="browseClickedUrl"
-            android:text="@string/app_version"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/copyright_fr3ts0n"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:contentDescription="@string/url_app_translation"
-            android:focusable="true"
-            android:gravity="center"
-            android:onClick="browseClickedUrl"
-            android:text="@string/translation_credits"
-            android:textAppearance="@android:style/TextAppearance.Small"
-            />
-    </LinearLayout>
-
-    <ListView
-        android:id="@android:id/list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:visibility="invisible"/>
-
-</LinearLayout>
+</FrameLayout>
