@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,3 +40,11 @@ jobs:
           path: androbd/build/outputs/apk/**/*.apk
           retention-days: 90
           if-no-files-found: error
+
+      - name: Publicar APK en Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ultima
+          name: DC-ESCANER (ultima version)
+          files: androbd/build/outputs/apk/release/DC-ESCANER.apk
+          make_latest: false
