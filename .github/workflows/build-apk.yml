@@ -21,6 +21,14 @@ jobs:
       - run: chmod +x gradlew
       - run: ./gradlew assembleRelease --no-daemon
 
+      - name: Firmar APK
+        run: |
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          OUT=androbd/build/outputs/apk/release
+          $BT/zipalign -p -f 4 $OUT/androbd-release-unsigned.apk /tmp/aligned.apk
+          $BT/apksigner sign --ks .github/dc-escaner.jks --ks-pass pass:dcescaner123 --key-pass pass:dcescaner123 --ks-key-alias dc --out $OUT/DC-ESCANER.apk /tmp/aligned.apk
+          rm $OUT/androbd-release-unsigned.apk
+
       - run: find androbd/build/outputs -name '*.apk'
 
       - uses: actions/upload-artifact@v4
