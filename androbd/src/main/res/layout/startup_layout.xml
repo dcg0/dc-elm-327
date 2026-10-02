@@ -6,7 +6,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.18"
+        android:alpha="1.0"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
         android:src="@drawable/vehicle_background" />
@@ -72,16 +72,45 @@
                 android:text="@string/copyright_fr3ts0n"
                 android:textAppearance="@android:style/TextAppearance.Small" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:contentDescription="@string/url_app_translation"
-                android:focusable="true"
                 android:gravity="center"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:contentDescription="https://share.google/pzkMjFO13CN0Am6xp"
                 android:onClick="browseClickedUrl"
-                android:text="@string/translation_credits"
-                android:textAppearance="@android:style/TextAppearance.Small" />
+                android:text="Fallas OBD2"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:contentDescription="https://obdb.community/"
+                android:onClick="browseClickedUrl"
+                android:text="OBDb"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:contentDescription="https://dcg0.github.io/DC-laboratory/"
+                android:onClick="browseClickedUrl"
+                android:text="DC Laboratory"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
 
         <ListView
