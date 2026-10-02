@@ -21,8 +21,11 @@ jobs:
       - run: chmod +x gradlew
       - run: ./gradlew assembleRelease --no-daemon
 
+      - run: find androbd/build/outputs -name '*.apk'
+
       - uses: actions/upload-artifact@v4
         with:
           name: DC-ESCANER-APK-FINAL
-          path: androbd/build/outputs/apk/release/androbd-release.apk
+          path: androbd/build/outputs/apk/**/*.apk
           retention-days: 90
+          if-no-files-found: error
