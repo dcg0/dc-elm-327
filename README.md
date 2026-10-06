@@ -63,36 +63,36 @@ La aplicación requiere un adaptador ELM327 compatible. Después de descargar el
 | :--: | :--: | :--: |
 | ![Screenshot of functions](/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_02.png) | ![Screenshot of OBD data](/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_06.png)
 ## Contribute
-  * Report issues in the [issue tracker](https://github.com/fr3ts0n/AndrOBD/issues)
+  * Report issues in the [issue tracker](https://github.com
   * Create a [Pull Request](https://docs.github.com/en/pull-requests)
-  * Test the app with different devices, alpha & beta releases are posted in the Telegram [AndrOBD release channel](https://t.me/AndrOBD_dev)
-  * Contribute to development of plugin extensions: [AndrOBD-Plugin repository](https://github.com/fr3ts0n/AndrOBD-Plugin)
+  * Test the app with different devices, alpha & beta releases are posted in the Telegram [AndrOBD release channel]
+  * Contribute to development of plugin extensions: [repository](https://github.com
   * Discuss the project in the [Telegram](https://t.me/joinchat/G60ltQv5CCEQ94BZ5yWQbg) or [Matrix](https://matrix.to/#/#AndrOBD:matrix.org) chat rooms
-  * Translate this app into more languages on [Weblate](https://hosted.weblate.org/engage/androbd/), or have a look at [Language translation](https://github.com/fr3ts0n/AndrOBD/wiki/Language-translation) section in the Wiki for more info.
+  * Translate this app into more languages on [Weblate](https://hosted.web or have a look at [Language translation](https://github.com section in the Wiki for more info.
 
 <details>
   <summary>Expand translation status</summary>
 
 #### App dialogs:
 
-[![App strings](https://hosted.weblate.org/widgets/androbd/-/strings/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/strings/)
+[![App strings]
 
 #### OBD data descriptions:
 
-[![OBD data descriptions](https://hosted.weblate.org/widgets/androbd/-/obd-data-descriptions/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/obd-data-descriptions/)
+[![OBD data descriptions](https://hosted.weblate.org/widgets/androbd/-/obd-data-descriptions/multi-auto.svg)](https://hosted.web
 
 #### Fault codes:
 
-[![Fault codes](https://hosted.weblate.org/widgets/androbd/-/fault-codes/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/fault-codes/)
+[![Fault codes](https://hosted.weblate.org
 
 #### Plugin framework:
 
-[![Plugin framework](https://hosted.weblate.org/widgets/androbd/-/androbd-plugin-framework/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/androbd-plugin-framework/)
+[![Plugin framework](https://hosted.weblate.org
 
 </details>
  
 #### ⚠️ Design request ⚠️
-* AndrOBD is looking for help with designing and implementing of a new modern GUI ([#104](https://github.com/fr3ts0n/AndrOBD/issues/104), [#126](https://github.com/fr3ts0n/AndrOBD/issues/126)), *Java & Kotlin [can be used](https://github.com/fr3ts0n/AndrOBD/wiki/Frequently-asked-questions#what-programming-languages-can-be-used-for-contributions)*. Contributers will be credited/linked in the Readme.
+* \DC laboratory is looking for help with designing and implementing of a new modern GUI ([#104](https://github.com/Android/issues/104), [#126](https://github.com/Android/issues/126)), *Java & Kotlin [can be used](https://github.com/Android/wiki/Frequently-asked-questions#what-programming-languages-can-be-used-for-contributions)*. Contributers will be credited/linked in the Readme.
 
 ## Support by donating
 
@@ -102,10 +102,10 @@ Buy us a coffee or donate in the amount that you see valuable for the project,
 DC laboratory
 
 *Thanks to the open source community and any supporters who pick this project up, DC lab will be able to get more development, new features, and hopefully even more than that.*
-
+DC laboratorio 
 
 ---
-
+DC
 ## Autoría y descarga
 
 **Autor:** [DC Laboratory](https://dcg0.github.io/DC-laboratory/)
