@@ -29,7 +29,6 @@ La aplicación requiere un adaptador ELM327 compatible. Después de descargar el
 
 ## Documentación
 
-* [FAQ](https://github.com/fr3ts0n/AndrOBD/wiki/Frequently-asked-questions) - Frequently asked questions
 
 #### Connection types
 * Bluetooth
