@@ -9,3 +9,11 @@
 **/*.iml
 *~
 local.properties
+
+# Signing material and local secrets must never be committed.
+*.jks
+*.keystore
+*.p12
+*.pem
+.env
+.env.*

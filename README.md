@@ -7,6 +7,7 @@
 Aplicación Android para diagnóstico vehicular mediante adaptadores ELM327. Permite conectarse por **Bluetooth, USB o Wi‑Fi**, leer y borrar códigos de falla, consultar datos en vivo, visualizar gráficas y revisar información del vehículo desde el teléfono.
 
 ![Build Release APK](https://github.com/dcg0/dc-elm-327/actions/workflows/build-apk.yml/badge.svg)
+[![CodeQL](https://github.com/dcg0/dc-elm-327/actions/workflows/codeql.yml/badge.svg)](https://github.com/dcg0/dc-elm-327/actions/workflows/codeql.yml) [![Política de seguridad](https://img.shields.io/badge/Seguridad-SECURITY.md-157a53?logo=github)](SECURITY.md)
 [![Última versión](https://img.shields.io/github/v/release/dcg0/dc-elm-327?sort=semver&label=release)](https://github.com/dcg0/dc-elm-327/releases)
 [![Issues](https://img.shields.io/github/issues/dcg0/dc-elm-327?color=red)](https://github.com/dcg0/dc-elm-327/issues)
 [![Licencia](https://img.shields.io/github/license/dcg0/dc-elm-327?color=lightgrey)](https://github.com/dcg0/dc-elm-327/blob/main/LICENSE)
@@ -25,6 +26,7 @@ La aplicación requiere un adaptador ELM327 compatible. Después de descargar el
 - **SHA-256 de la APK publicada:** `336d7a9adadfd3bc05c1d8a654e7a6c3fb1980a8cd360ea23bfd19e29bbfdb11`
 - La APK fue compilada como **Release**, sin minificación R8 para mejorar la compatibilidad de arranque, firmada con la clave de producción y verificada con Android Signature Scheme v1, v2 y v3.
 - La APK publicada y la compilada localmente tienen el mismo SHA-256.
+- La clave de firma de release se mantiene únicamente en secretos protegidos de GitHub Actions; no forma parte del repositorio. Consulta [`SECURITY.md`](SECURITY.md) para reportar vulnerabilidades.
 - La aplicación requiere Android 6.0 (API 23) o posterior y apunta al SDK objetivo configurado para esta release.
 
 ## Documentación

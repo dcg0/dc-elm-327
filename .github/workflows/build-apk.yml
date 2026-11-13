@@ -1,50 +1,41 @@
 name: Build DC-ESCANER APK
-
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v7
         with:
           submodules: recursive
-
-      - uses: actions/setup-java@v4
+      - name: Set up Java
+        uses: actions/setup-java@v6
         with:
           java-version: '17'
-          distribution: 'temurin'
-
-      - run: chmod +x gradlew
-      - run: ./gradlew assembleRelease --no-daemon
-
-      - name: Firmar APK
+          distribution: temurin
+      - name: Build release APK
         run: |
-          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
-          OUT=androbd/build/outputs/apk/release
-          $BT/zipalign -p -f 4 $OUT/androbd-release-unsigned.apk /tmp/aligned.apk
-          $BT/apksigner sign --ks .github/dc-escaner.jks --ks-pass pass:dcescaner123 --key-pass pass:dcescaner123 --ks-key-alias dc --out $OUT/DC-ESCANER.apk /tmp/aligned.apk
-          rm $OUT/androbd-release-unsigned.apk
-
-      - run: find androbd/build/outputs -name '*.apk'
-
-      - uses: actions/upload-artifact@v4
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+      - name: Verify unsigned artifact
+        run: |
+          test -s androbd/build/outputs/apk/release/androbd-release-unsigned.apk
+          find androbd/build/outputs -name '*.apk' -type f -print
+      - name: Upload unsigned APK for review
+        uses: actions/upload-artifact@v7
         with:
-          name: DC-ESCANER-APK-FINAL
-          path: androbd/build/outputs/apk/**/*.apk
-          retention-days: 90
+          name: DC-ESCANER-APK-UNSIGNED
+          path: androbd/build/outputs/apk/release/androbd-release-unsigned.apk
+          retention-days: 30
           if-no-files-found: error
 
-      - name: Publicar APK en Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ultima
-          name: DC-ESCANER (ultima version)
-          files: androbd/build/outputs/apk/release/DC-ESCANER.apk
-          make_latest: false
+# Release signing is intentionally not performed here. The former keystore and
+# password were public. Configure protected repository secrets before adding a
+# release-signing job; never commit signing material to this repository.
